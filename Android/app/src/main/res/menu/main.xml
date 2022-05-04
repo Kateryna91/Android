@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/m_zakuska"
+        android:title="Закуски"
+        app:showAsAction="never" />
+    <group
+        android:id="@+id/group_anonimus"
+        android:visible="true">
+        <item
+            android:id="@+id/m_login"
+            android:title="Вхід"
+            app:showAsAction="never" />
+    </group>
+
+    <group
+        android:id="@+id/group_auth"
+        android:visible="false">
+        <item
+            android:id="@+id/m_home"
+            android:title="Додати закуску"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/m_logout"
+            android:title="Вихід"
+            app:showAsAction="never" />
+    </group>
+
+</menu>

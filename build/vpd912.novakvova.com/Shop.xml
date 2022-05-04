@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Shop</name>
+    </assembly>
+    <members>
+        <member name="M:Shop.Controllers.AccountController.Login(Shop.Models.LoginViewModel)">
+            <summary>
+            Вхід на сайт
+            </summary>
+            <param name="model">Подель із даними</param>
+            <returns>Повертає токен авторизації</returns>
+            <remarks>Awesomeness!</remarks>
+            <response code="200">Login user</response>
+            <response code="400">Login has missing/invalid values</response>
+            <response code="500">Oops! Can't create your login right now</response>
+        </member>
+        <member name="P:Shop.Models.LoginViewModel.Email">
+            <summary>
+            The email of the user
+            </summary>
+            <example>admin@gmail.com</example>
+        </member>
+        <member name="P:Shop.Models.LoginViewModel.Password">
+            <summary>
+            The password of the user
+            </summary>
+            <example>123456</example>
+        </member>
+        <member name="P:Shop.Models.TokenResponceViewModel.token">
+            <summary>
+            token
+            </summary>
+            <example>eyJpZCI6IjEzMzciLCJ1c2VybmFtZSI6ImJpem9uZSIsImlhdCI6MTU5NDIwOTYwMCwicm9sZSI6InVzZXIifQ</example>
+        </member>
+    </members>
+</doc>
